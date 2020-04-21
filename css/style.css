@@ -1,78 +1,112 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  color: #2c3e50;
+}
+
 body {
-    margin: 0;
-    background: #dedede;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-  }
+  margin: 0;
+  background: #dedede;
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  height: 100vh;
+}
 
-  .gameboard {
-    height: 100vh;
-    width: 100vh;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto;
-    max-height: 60vh;
-    max-width: 60vh;
-  }
+.header{
+  padding: 0 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 
-  .color {
-    width: 50%;
-    height: 50%;
-    display: inline-block;
-  }
+.title{
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-right: auto;
+}
 
-  .left {
-    float: left;
-  }
+.level{
+  font-size: 2rem;
+  font-weight: normal;
+}
 
-  .right {
-    float: left;
-  }
+.gameboard-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-  .celeste {
-    background: #22a6b3;
-  }
+.gameboard {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  max-height: 60vh;
+  max-width: 60vh;
+}
 
-  .celeste.light {
-    background: #7ed6df;
-  }
+.color {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+}
 
-  .violeta {
-    background: #be2edd;
-  }
+.left {
+  float: left;
+}
 
-  .violeta.light {
-    background: #e056fd;
-  }
+.right {
+  float: left;
+}
 
-  .naranja {
-    background: #f0932b;
-  }
+.celeste {
+  background: #22a6b3;
+}
 
-  .naranja.light {
-    background: #ffbe76;
-  }
+.celeste.light {
+  background: #7ed6df;
+}
 
-  .verde {
-    background: #6ab04c;
-  }
+.violeta {
+  background: #be2edd;
+}
 
-  .verde.light {
-    background: #badc58;
-  }
+.violeta.light {
+  background: #e056fd;
+}
 
-  .btn-start {
-    width: 400px;
-    height: 100px;
-    background: #ecf0f1;
-    color: #2c3e50;
-    font-size: 2.5rem;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
-  }
+.naranja {
+  background: #f0932b;
+}
 
-  .hide {
-    display: none;
-  }
+.naranja.light {
+  background: #ffbe76;
+}
+
+.verde {
+  background: #6ab04c;
+}
+
+.verde.light {
+  background: #badc58;
+}
+
+.btn-start {
+  width: 400px;
+  height: 100px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
